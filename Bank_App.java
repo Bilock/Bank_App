@@ -51,7 +51,7 @@ public class Bank_App {
                 System.out.println();
                 System.out.println("  |  "+"Please Choose Which Operation Would You Like To Do".toUpperCase()+"  |  ");       //Output To The User
                 System.out.println("\n\tMoney Deposit \t[ 1 ]\n\tMoney Withdrawal [ 2 ]\n\tSeeing Amount \t[ 3 ]\n\tExit [ 4 ]".toUpperCase()); //Choices That Users Can See & Choose
-                System.out.print("\t Choice: ".toUpperCase()); Choice = Sn.nextLine(); // Input Of What Number User will Choose
+                System.out.print("\t Choice: ".toUpperCase()); Choice = Sn.next(); // Input Of What Number User will Choose
                 if (Choice.length() == 1) {  //Once Again To Limit User From Entering More than 1 digit
                     if(Choice.equals("1") || Choice.equals("2") || Choice.equals("3") || Choice.equals("4") ) {  // To Make User Choose Between 1-4
                         switch (Choice) {    // Choices That User Will Choose
