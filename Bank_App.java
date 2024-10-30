@@ -15,7 +15,7 @@ public class Bank_App {
             System.out.println("  |  "+"Hello & Welcome To Bank's Gone ".toUpperCase()+"  |  "); //Welcoming Script
             System.out.println("  |  "+"Please Enter Your PIN Code".toUpperCase()+"  |  ");    //Entering PIN Script
             String _PIN_ = "";
-            System.out.print("\t PIN: "); _PIN_ = Sn.nextLine();                //PIN Number
+            System.out.print("\t PIN: "); _PIN_ = Sn.next();                //PIN Number
             int times = 0;                                                          // The times that PIN Code Wrote Wrong (PIN Doesn't Equal To The Actual PIN or User Entered Less/More Digits
             if (_PIN_.equals("0242") && _PIN_.length() == 4) {           //To Check If The PIN Right/Wrong && To limit User
                                                                               //From Entering More Than 4 Digits
@@ -26,7 +26,7 @@ public class Bank_App {
                 while (times != 3) {
                     System.out.println();
                     System.out.println("  |  "+"Incorrect PIN Please Enter Your PIN Again".toUpperCase()+ "  |  ");
-                    System.out.print("\t PIN: ");_PIN_ = Sn.nextLine();  //PIN Number
+                    System.out.print("\t PIN: ");_PIN_ = Sn.next();  //PIN Number
                     if (_PIN_.equals("0242") && _PIN_.length() == 4) {
                                                                                                    //Like Any Real Bank It Has Limits Of Retries
                         Bank_Account(); //This To Call The Method Bank_Account
